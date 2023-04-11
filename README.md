@@ -3,5 +3,5 @@
 # Tech Stack Used:
 
 Langauge: Python
-Packages: FastAPI, SQLAlchemy, uvicorn 
+Packages: FastAPI, pydantic, SQLAlchemy, uvicorn 
 Tools: Postman API
