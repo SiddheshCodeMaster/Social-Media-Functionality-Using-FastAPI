@@ -18,6 +18,11 @@ class Post(BaseModel):
 my_posts = [{"title":"title of post 1","content":"content of post 1", "id":1}, 
             {"title":"favorite foods", "content":"Pizza","id":2}]
 
+def find_post(id):
+    for p in my_posts:
+        if p["id"] == id:
+            return p
+
 @app.get("/")
 def root():
     return {"message":"Welcome to my API"}
@@ -28,8 +33,8 @@ def get_posts():
 
 @app.get("/posts/{id}")
 def get_post(id):
-    print(id)
-    return {"post_detail":f"here is the post {id}"}
+    post = find_post(int(id))
+    return {"post_detail":post}
 
 @app.post("/posts")
 def create_posts(post: Post):
