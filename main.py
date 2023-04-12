@@ -22,7 +22,7 @@ def get_posts():
     return {"data":"This is your post."}
 
 @app.post("/createposts")
-def create_posts(new_posts: Post):
-    print(new_posts)
-    return {"data":new_posts}
+def create_posts(post: Post):
+    print(post)
+    return {"data":post}
     # Title string, content string
