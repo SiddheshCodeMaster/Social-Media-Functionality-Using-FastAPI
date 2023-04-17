@@ -32,7 +32,7 @@ def find_index_post(id):
 
 @app.get("/")
 def root():
-    return {"message":"Welcome to my API"}
+    return {"message":"Welcome to the Social Media Functionality using FastAPI."}
 
 @app.get("/posts")
 def get_posts():
