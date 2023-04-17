@@ -4,7 +4,7 @@
 
 Langauge: Python
 Packages: FastAPI, pydantic, SQLAlchemy, uvicorn 
-Tools: Postman API
+Tools: Postman API, PostgreSQL (pgAdmin4, psql)
 
 # Tech Stack Explained:
 

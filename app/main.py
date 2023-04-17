@@ -70,3 +70,5 @@ def update_post(id: int, post: Post):
     post_dict['id'] = id
     my_posts[index] = post_dict
     return {'message':'updated post'}
+
+# Database connectivity with Postgre SQL:
