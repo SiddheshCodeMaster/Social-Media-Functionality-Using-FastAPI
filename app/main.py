@@ -6,6 +6,9 @@ from random import randint, randrange
 from fastapi import Response 
 from fastapi import status
 from fastapi import HTTPException
+import psycopg2
+from psycopg2.extras import RealDictCursor
+import time
 
 app = FastAPI()
 
@@ -14,7 +17,22 @@ class Post(BaseModel):
     title: str
     content: str
     published: bool = True
-    rating: Optional[int] = None
+
+# Database connectivity with Postgre SQL:
+while True:
+    try:
+        conn =psycopg2.connect(host='localhost',
+                           database='fastapi', 
+                           user='postgres', 
+                           password='password1234',
+                           cursor_factory=RealDictCursor)
+        cursor = conn.cursor()
+        print("Database connection was successfull.")
+        break
+    except Exception as error:
+        print("Connecting to the database failed")
+        print("Error: ", error)
+        time.sleep(2)
 
 
 my_posts = [{"title":"title of post 1","content":"content of post 1", "id":1}, 
@@ -71,4 +89,4 @@ def update_post(id: int, post: Post):
     my_posts[index] = post_dict
     return {'message':'updated post'}
 
-# Database connectivity with Postgre SQL:
+
