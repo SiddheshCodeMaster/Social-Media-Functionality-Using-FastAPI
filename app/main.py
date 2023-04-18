@@ -1,5 +1,5 @@
 from typing import Optional
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
 from fastapi.params import Body
 from pydantic import BaseModel
 from random import randint, randrange
@@ -9,10 +9,14 @@ from fastapi import HTTPException
 import psycopg2
 from psycopg2.extras import RealDictCursor
 import time
+from sqlalchemy.orm import Session
+
+from . import models
+from .database import engine
+from .database import get_db
+models.Base.metadata.create_all(bind = engine)
 
 app = FastAPI()
-
-
 class Post(BaseModel):
     title: str
     content: str
@@ -47,6 +51,10 @@ def find_index_post(id):
     for i, p in enumerate(my_posts):
         if p['id'] == id:
             return i
+
+@app.get("/sqlalchemy")
+def test_posts(db: Session = Depends(get_db)):
+    return {"status": "sucessfull now"}
 
 @app.get("/")
 def root():
