@@ -54,17 +54,19 @@ def find_index_post(id):
 
 @app.get("/sqlalchemy")
 def test_posts(db: Session = Depends(get_db)):
-    return {"status": "sucessfull now"}
+    posts = db.query(models.Post).all()
+    return {"data": posts}
 
 @app.get("/")
 def root():
     return {"message":"Welcome to the Social Media Functionality using FastAPI."}
 
 @app.get("/posts")
-def get_posts():
-    cursor.execute("""SELECT * FROM posts""")
-    posts = cursor.fetchall()
-    print(posts)
+def get_posts(db: Session = Depends(get_db)):
+    # cursor.execute("""SELECT * FROM posts""")
+    # posts = cursor.fetchall()
+    posts = db.query(models.Post).all()
+    # print(posts)
     return {"data":posts}
 
 @app.get("/posts/{id}")
