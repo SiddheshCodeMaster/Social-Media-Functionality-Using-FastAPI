@@ -24,10 +24,10 @@ Tools: Postman API, PostgreSQL (pgAdmin4, psql)
 
 - ***Psycopg 2*** is a PostgreSQL adapter for Python. It is designed to perform heavily multi-threaded applications that usually create and destroy lots of cursors and make a large number of simultaneous INSERTS or UPDATES. Psycopg features client-side and server-side cursors, asynchronous communication, and notification. Psycopg 2 is both Unicode and Python 3 friendly.
 
-***[Psycopg 2 Geeks For Geeks Introduction](https://www.geeksforgeeks.org/introduction-to-psycopg2-module-in-python/)
+***[Psycopg 2 Geeks For Geeks Introduction](https://www.geeksforgeeks.org/introduction-to-psycopg2-module-in-python/)***[
 
 - ***Postman API**, if we have to test the API Architecture, we can make use of Postman API. One of the best and most simple tools available to test API Architectures. It provides features to make new requests, create environmental variables inside the application itself, Bearer Token Authentication etc. These are very crucial when we are creating a REST API architecture.
 
 - ***Pydantic*** is a data-modelling library that has efficient error handling functionalities. Along with that, JSON parsing and validation is provided which makes it a crucial library for this project. 
 
-***[Beginners Guide to Pydantic - Medium](https://betterprogramming.pub/the-beginners-guide-to-pydantic-ba33b26cde89)
+***[Beginners Guide to Pydantic - Medium](https://betterprogramming.pub/the-beginners-guide-to-pydantic-ba33b26cde89)***[
