@@ -26,4 +26,8 @@ Tools: Postman API, PostgreSQL (pgAdmin4, psql)
 
 ***[Psycopg 2 Geeks For Geeks Introduction](https://www.geeksforgeeks.org/introduction-to-psycopg2-module-in-python/)
 
-- ***Postman API**, we all know what 
+- ***Postman API**, if we have to test the API Architecture, we can make use of Postman API. One of the best and most simple tools available to test API Architectures. It provides features to make new requests, create environmental variables inside the application itself, Bearer Token Authentication etc. These are very crucial when we are creating a REST API architecture.
+
+- ***Pydantic*** is a data-modelling library that has efficient error handling functionalities. Along with that, JSON parsing and validation is provided which makes it a crucial library for this project. 
+
+***[Beginners Guide to Pydantic - Medium](https://betterprogramming.pub/the-beginners-guide-to-pydantic-ba33b26cde89)
