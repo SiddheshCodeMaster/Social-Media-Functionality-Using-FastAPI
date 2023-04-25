@@ -16,8 +16,8 @@ Tools: Postman API, PostgreSQL (pgAdmin4, psql)
 
 - PostgreSQL is one fot he most widely used database management tools. PostgreSQL comes under the SQL category but it is a bit different from the Normal SQL Database Management. It uses the concept of Classes and Objects. It combines the advantages of OOPS and SQL together. It comes in very handy when we are dealing with API/RESTFUL Architectures. Also, PostgreSQL provides wide range of supported functionality so that developers can easily make use of libraries to connect the database to the code. For this application, each and every criteria was matching to use PostgreSQL. Hence, I have used PostgreSQL as the database.
 
-*** (IBM's Introduction to PostgreSQL)[https://www.ibm.com/topics/postgresql]***
+***(IBM's Introduction to PostgreSQL)[https://www.ibm.com/topics/postgresql]***
 
 - ***uvicorn*** is a ASGI web implementation library in Python. It is a low-level server application interface for async frameworks. Before this library there was no module which catered to this need. We had to create huge code base for creation of interfaces.
 
-*** [PyPI Installation of uvicorn] (https://pypi.org/project/uvicorn/)***
+***[PyPI Installation of uvicorn] (https://pypi.org/project/uvicorn/)***
