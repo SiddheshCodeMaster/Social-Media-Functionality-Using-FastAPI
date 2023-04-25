@@ -21,3 +21,9 @@ Tools: Postman API, PostgreSQL (pgAdmin4, psql)
 - ***uvicorn*** is a ASGI web implementation library in Python. It is a low-level server application interface for async frameworks. Before this library there was no module which catered to this need. We had to create huge code base for creation of interfaces.
 
 ***[PyPI Installation of uvicorn](https://pypi.org/project/uvicorn/)***
+
+- ***Psycopg 2*** is a PostgreSQL adapter for Python. It is designed to perform heavily multi-threaded applications that usually create and destroy lots of cursors and make a large number of simultaneous INSERTS or UPDATES. Psycopg features client-side and server-side cursors, asynchronous communication, and notification. Psycopg 2 is both Unicode and Python 3 friendly.
+
+***[Psycopg 2 Geeks For Geeks Introduction](https://www.geeksforgeeks.org/introduction-to-psycopg2-module-in-python/)
+
+- ***Postman API**, we all know what 
