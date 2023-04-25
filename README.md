@@ -20,4 +20,4 @@ Tools: Postman API, PostgreSQL (pgAdmin4, psql)
 
 - ***uvicorn*** is a ASGI web implementation library in Python. It is a low-level server application interface for async frameworks. Before this library there was no module which catered to this need. We had to create huge code base for creation of interfaces.
 
-***[PyPI Installation of uvicorn] (https://pypi.org/project/uvicorn/)***
+***(PyPI Installation of uvicorn)[https://pypi.org/project/uvicorn/]***
