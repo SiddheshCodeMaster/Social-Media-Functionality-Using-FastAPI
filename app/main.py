@@ -16,4 +16,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message":"Welcome to the Social Media Functionality using FastAPI."}
+    return {"message":"CRUD Based Voting System using FastAPI"}
