@@ -1,4 +1,4 @@
-# Social-Media-Functionality-Using-FastAPI
+# Just-In-Time-Functionality-Management-Using-FastAPI
 
 # Tech Stack Used:
 
